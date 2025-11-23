@@ -4,40 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="w-full">
-        <div class="w-full h-screen flex flex-col items-center"
-        style="background: linear-gradient(120deg, #4B4AEF 60%, transparent 40%);"
+        <div class="w-full min-h-screen flex flex-col items-center"
+        style="background: linear-gradient(100deg, #4B4AEF 70%, #FAFAFF 30%);"
         >
-            <header class="w-[85%] h-10 mt-5 border flex justify-between items-center">
+            <header class="w-[85%] h-10 mt-5 flex justify-between items-center">
                     <img src="/assests/images/Logo.svg" alt="Logo" class="w-[150px]">
-                    <div class=" flex gap-5 text-white font-medium">
+                    <div class="hidden lg:flex gap-5 text-white font-medium">
                         <span class="">Product</span>
                         <span class="">Solution</span>
                         <span class="">Enterprise</span>
                         <span class="">Price</span>
                     </div>
-                    <div class="">
+                    <div class="hidden lg:flex">
                         <button class="border-none px-4 py-2 rounded-sm mr-4 bg-white">Login</button>
-                        <button class="bg-amber-300 text-white px-4 py-2 rounded-sm">Sign Up</button>
+                        <button class="bg-[#FFCA1D] text-white px-4 py-2 rounded-sm">Sign Up</button>
+                    </div>
+                    <div class="block lg:hidden">
+                        <i class="fa fa-bars active:scale-110 active:text-[#FFCA1D]"></i>
                     </div>
             </header>
-            <div class="flex flex-row items-start mt-40 w-[85%] border">
-                <div class="w-[50%] flex flex-col gap-8 items-start">
-                    <span class="text-black text-1xl p-1.5 bg-white rounded-lg">Welcome to TeamFlow</span>
-                    <h1 class="text-white text-2xl">Work the way that works for you</h1>
-                    <p class="text-white text-4xl">Create, build collaborate, and ship product very fast.</p>
-                    <button type="button" class="p-3 bg-white rounded-lg">Get started</button>
+            <div class="flex flex-col lg:mt-20 mt-30 w-[85%] lg:flex-row">
+                <div class="sm:w-[50%] w-full flex flex-col gap-8 items-start">
+                    <span class="text-black text-1xl p-1.5 bg-white rounded-lg">👋 Welcome to TeamFlow</span>
+                    <h1 class="text-white text-4xl">Work the way that works for you</h1>
+                    <div class="bg-[#3ADAD9] p-0.5 w-[50px]"></div>
+                    <p class="text-white text-2xl">Create, build collaborate, and ship product very fast.</p>
+                    <button type="button" class="p-3 bg-[#FFCA1D] rounded-lg hover:scale-120 transition-all duration-300">Get started</button>
                 </div>
-                <div class="w-[50%] h-full flex relative border justify-evenly flex-wrap">
-                    <img src="/assests/images/Group-43.svg" alt="" class="lg:w-70 w-40">
-                    <img src="/assests/images/Group-46.svg" alt="" class="lg:w-80 w-40">
-                    <img src="/assests/images/Group-44.svg" alt="" class="lg:w-80 w-40 -ml-30">
-                    <img src="/assests/images/Group-55.svg" alt="" class="lg:w-40 w-30 -mt-15">
+                <div class="w-[50%] w-full mx-auto h-90 flex relative sm:justify-center px-20 sm:px-0 justify-between flex-wrap">
+                    <img src="/assests/images/Group-43.svg" alt="" class="md:w-50 w-40 hover:scale-120 transition-all duration-300">
+                    <img src="/assests/images/Group-46.svg" alt="" class="md:w-80 w-40 hover:scale-120 transition-all duration-300 -ml-5">
+                    <img src="/assests/images/Group-44.svg" alt="" class="md:w-80 w-40 hover:scale-120 transition-all duration-300 -ml-10 -mt-5">
+                    <img src="/assests/images/Group-55.svg" alt="" class="md:w-40 w-30 hover:scale-120 transition-all duration-300 -mt-15">
                 </div> 
+            </div>
+        </div>
+
+        <div class="flex w-[85%] mt-20 mx-auto justify-between items-center lg:flex-row py-3 gap-5 flex-col relative">
+            <div class="bg-[#FFCA1D] p-0.5 w-[50px] absolute top-0 left-0"></div>
+            <div class="flex w-full text-2xl sm:text-[30px] text-[#515151] font-[Nunito Sans]">See why over 100,000 teams choose TeamFlow.com</div>
+            <div class="w-[80%] flex justify-between items-center">
+                <img src="assests/images/image-1.svg" alt="Surporters" class="w-12">
+                <img src="assests/images/image-2.svg" alt="Surporters" class="w-12">
+                <img src="assests/images/image-3.svg" alt="Surporters" class="w-12">
+                <img src="assests/images/image-4.svg" alt="Surporters" class="w-12">
+            </div>
+        </div>
+
+        <div class="w-[85%] mx-auto mt-20 py-10 flex flex-col">
+            <h2 class="font-[700] text-[48px] mx-auto">What you <span class="text-[#FFCA1D]">can do?</span></h2>
+            <div class="w-full mt-20 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 text-[#585858]">
+                <div class="flex flex-col items-center gap-8">
+                    <img src="assests/images/graph_icon.svg" alt="Business icon" class="w-[102px] hover:scale-120 transition-all duration-300">
+                    <h3 class="font-[800]">Business Planning</h3>
+                    <p class="text-center max-w-[80%]">Our Business Plan is a written document describing a company’s core business activities.</p>
+                </div>
+                <div class="flex flex-col items-center gap-8">
+                    <img src="assests/images/financial_icon.svg" alt="financial icon" class="w-[102px] hover:scale-120 transition-all duration-300">
+                    <h3 class="font-[800]">financial Planning</h3>
+                    <p class="text-center max-w-[80%]">Our expert team sensible decision about their money, to ensure they achieve the life goals. A financial plan.</p>
+                </div>
+                <div class="flex flex-col items-center gap-8">
+                    <img src="assests/images/market_icon.svg" alt="Market icon" class="w-[102px] hover:scale-120 transition-all duration-300">
+                    <h3 class="font-[800]">Market Analysis</h3>
+                    <p class="text-center max-w-[80%]">A market analysis is a quantitative and qualitative assessment of a market. It looks into the size of the market.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[85%] mx-auto mt-20 text-[#575757]">
+            <h2 class="font-[700] text-[48px] text-center">Our <span class="text-[#FFCA1D]">Features</span></h2>
+            <div class="flex mx-auto mt-20 items-center justify-center flex-col md:flex-row gap-20">
+                <div class="flex w-[full]">
+                    <img src="assests/images/Group-32.svg" alt="Features image" class="">
+                </div>
+                <div class="flex lg:w-[50%] w-full flex-col gap-5">
+                    <h2 class="text-[30px] text-black lg:text-[40px]">Manage everything in one workspace</h2>
+                    <div class="bg-[#FFCA1D] p-0.5 w-[50px]"></div>
+                    <p class="">Planning, tracking and delivering your team’s best work has never been easier. An integrated workspace that’s simple to use, TeamFlow lets you spend less time managing your work and more time actually doing it.</p>
+                </div>
             </div>
         </div>
     </div>
