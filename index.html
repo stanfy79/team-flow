@@ -1,96 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="w-full">
-        <div class="w-full min-h-screen flex flex-col items-center"
-        style="background: linear-gradient(100deg, #4B4AEF 70%, #FAFAFF 30%);"
+      <div
+        class="w-full min-h-screen flex flex-col items-center"
+        style="background: linear-gradient(100deg, #4b4aef 70%, #fafaff 30%)"
+      >
+        <header class="w-[85%] h-10 mt-5 flex justify-between items-center">
+          <img src="/assests/images/Logo.svg" alt="Logo" class="w-[150px]" />
+          <div class="hidden lg:flex gap-5 text-white font-medium">
+            <span class="">Product</span>
+            <span class="">Solution</span>
+            <span class="">Enterprise</span>
+            <span class="">Price</span>
+          </div>
+          <div class="hidden lg:flex">
+            <button class="border-none px-4 py-2 rounded-sm mr-4 bg-white">
+              Login
+            </button>
+            <button class="bg-[#FFCA1D] text-white px-4 py-2 rounded-sm">
+              Sign Up
+            </button>
+          </div>
+          <div class="block lg:hidden">
+            <i class="fa fa-bars active:scale-110 active:text-[#FFCA1D]"></i>
+          </div>
+        </header>
+        <div class="flex flex-col lg:mt-20 mt-30 w-[85%] lg:flex-row">
+          <div class="sm:w-[50%] w-full flex flex-col gap-8 items-start">
+            <span class="text-black text-1xl p-1.5 bg-white rounded-lg"
+              >👋 Welcome to TeamFlow</span
+            >
+            <h1 class="text-white text-4xl">Work the way that works for you</h1>
+            <div class="bg-[#3ADAD9] p-0.5 w-[50px]"></div>
+            <p class="text-white text-2xl">
+              Create, build collaborate, and ship product very fast.
+            </p>
+            <button
+              type="button"
+              class="p-3 bg-[#FFCA1D] rounded-lg hover:scale-120 transition-all duration-300"
+            >
+              Get started
+            </button>
+          </div>
+          <div
+            class="w-[50%] w-full mx-auto h-90 flex relative lg:px-20 px-0 justify-around md:justify-between flex-wrap"
+          >
+            <img
+              src="/assests/images/Group-43.svg"
+              alt=""
+              class="md:w-50 w-30 hover:scale-120 transition-all duration-300"
+            />
+            <img
+              src="/assests/images/Group-46.svg"
+              alt=""
+              class="md:w-80 w-40 hover:scale-120 transition-all duration-300 -ml-5"
+            />
+            <img
+              src="/assests/images/Group-44.svg"
+              alt=""
+              class="md:w-80 w-40 hover:scale-120 transition-all duration-300 -ml-10 -mt-5"
+            />
+            <img
+              src="/assests/images/Group-55.svg"
+              alt=""
+              class="md:w-40 w-30 hover:scale-120 transition-all duration-300 -mt-15"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex w-[85%] mt-20 mx-auto justify-between items-center lg:flex-row py-4 gap-5 flex-col relative"
+      >
+        <div class="bg-[#FFCA1D] p-0.5 w-[50px] absolute top-0 left-0"></div>
+        <div
+          class="flex w-full text-[20px] md:text-2xl text-[#515151] font-[Nunito Sans]"
         >
-            <header class="w-[85%] h-10 mt-5 flex justify-between items-center">
-                    <img src="/assests/images/Logo.svg" alt="Logo" class="w-[150px]">
-                    <div class="hidden lg:flex gap-5 text-white font-medium">
-                        <span class="">Product</span>
-                        <span class="">Solution</span>
-                        <span class="">Enterprise</span>
-                        <span class="">Price</span>
-                    </div>
-                    <div class="hidden lg:flex">
-                        <button class="border-none px-4 py-2 rounded-sm mr-4 bg-white">Login</button>
-                        <button class="bg-[#FFCA1D] text-white px-4 py-2 rounded-sm">Sign Up</button>
-                    </div>
-                    <div class="block lg:hidden">
-                        <i class="fa fa-bars active:scale-110 active:text-[#FFCA1D]"></i>
-                    </div>
-            </header>
-            <div class="flex flex-col lg:mt-20 mt-30 w-[85%] lg:flex-row">
-                <div class="sm:w-[50%] w-full flex flex-col gap-8 items-start">
-                    <span class="text-black text-1xl p-1.5 bg-white rounded-lg">👋 Welcome to TeamFlow</span>
-                    <h1 class="text-white text-4xl">Work the way that works for you</h1>
-                    <div class="bg-[#3ADAD9] p-0.5 w-[50px]"></div>
-                    <p class="text-white text-2xl">Create, build collaborate, and ship product very fast.</p>
-                    <button type="button" class="p-3 bg-[#FFCA1D] rounded-lg hover:scale-120 transition-all duration-300">Get started</button>
-                </div>
-                <div class="w-[50%] w-full mx-auto h-90 flex relative sm:justify-center px-20 sm:px-0 justify-between flex-wrap">
-                    <img src="/assests/images/Group-43.svg" alt="" class="md:w-50 w-40 hover:scale-120 transition-all duration-300">
-                    <img src="/assests/images/Group-46.svg" alt="" class="md:w-80 w-40 hover:scale-120 transition-all duration-300 -ml-5">
-                    <img src="/assests/images/Group-44.svg" alt="" class="md:w-80 w-40 hover:scale-120 transition-all duration-300 -ml-10 -mt-5">
-                    <img src="/assests/images/Group-55.svg" alt="" class="md:w-40 w-30 hover:scale-120 transition-all duration-300 -mt-15">
-                </div> 
-            </div>
+          See why over 100,000 teams choose TeamFlow.com
         </div>
+        <div class="w-[80%] flex justify-between items-center">
+          <img src="assests/images/image-1.svg" alt="Surporters" class="w-12" />
+          <img src="assests/images/image-2.svg" alt="Surporters" class="w-12" />
+          <img src="assests/images/image-3.svg" alt="Surporters" class="w-12" />
+          <img src="assests/images/image-4.svg" alt="Surporters" class="w-12" />
+        </div>
+      </div>
 
-        <div class="flex w-[85%] mt-20 mx-auto justify-between items-center lg:flex-row py-3 gap-5 flex-col relative">
-            <div class="bg-[#FFCA1D] p-0.5 w-[50px] absolute top-0 left-0"></div>
-            <div class="flex w-full text-2xl sm:text-[30px] text-[#515151] font-[Nunito Sans]">See why over 100,000 teams choose TeamFlow.com</div>
-            <div class="w-[80%] flex justify-between items-center">
-                <img src="assests/images/image-1.svg" alt="Surporters" class="w-12">
-                <img src="assests/images/image-2.svg" alt="Surporters" class="w-12">
-                <img src="assests/images/image-3.svg" alt="Surporters" class="w-12">
-                <img src="assests/images/image-4.svg" alt="Surporters" class="w-12">
-            </div>
+      <div class="w-[85%] mx-auto mt-20 py-10 flex flex-col">
+        <h2 class="font-[700] text-[30px] md:text-[48px] mx-auto">
+          What you <span class="text-[#FFCA1D]">can do?</span>
+        </h2>
+        <div
+          class="w-full mt-20 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 text-[#585858]"
+        >
+          <div class="flex flex-col items-center gap-8">
+            <img
+              src="assests/images/graph_icon.svg"
+              alt="Business icon"
+              class="w-[102px] hover:scale-120 transition-all duration-300"
+            />
+            <h3 class="font-[800]">Business Planning</h3>
+            <p class="text-center max-w-[80%]">
+              Our Business Plan is a written document describing a company’s
+              core business activities.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-8">
+            <img
+              src="assests/images/financial_icon.svg"
+              alt="financial icon"
+              class="w-[102px] hover:scale-120 transition-all duration-300"
+            />
+            <h3 class="font-[800]">financial Planning</h3>
+            <p class="text-center max-w-[80%]">
+              Our expert team sensible decision about their money, to ensure
+              they achieve the life goals. A financial plan.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-8">
+            <img
+              src="assests/images/market_icon.svg"
+              alt="Market icon"
+              class="w-[102px] hover:scale-120 transition-all duration-300"
+            />
+            <h3 class="font-[800]">Market Analysis</h3>
+            <p class="text-center max-w-[80%]">
+              A market analysis is a quantitative and qualitative assessment of
+              a market. It looks into the size of the market.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="w-[85%] mx-auto mt-20 py-10 flex flex-col">
-            <h2 class="font-[700] text-[48px] mx-auto">What you <span class="text-[#FFCA1D]">can do?</span></h2>
-            <div class="w-full mt-20 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 text-[#585858]">
-                <div class="flex flex-col items-center gap-8">
-                    <img src="assests/images/graph_icon.svg" alt="Business icon" class="w-[102px] hover:scale-120 transition-all duration-300">
-                    <h3 class="font-[800]">Business Planning</h3>
-                    <p class="text-center max-w-[80%]">Our Business Plan is a written document describing a company’s core business activities.</p>
-                </div>
-                <div class="flex flex-col items-center gap-8">
-                    <img src="assests/images/financial_icon.svg" alt="financial icon" class="w-[102px] hover:scale-120 transition-all duration-300">
-                    <h3 class="font-[800]">financial Planning</h3>
-                    <p class="text-center max-w-[80%]">Our expert team sensible decision about their money, to ensure they achieve the life goals. A financial plan.</p>
-                </div>
-                <div class="flex flex-col items-center gap-8">
-                    <img src="assests/images/market_icon.svg" alt="Market icon" class="w-[102px] hover:scale-120 transition-all duration-300">
-                    <h3 class="font-[800]">Market Analysis</h3>
-                    <p class="text-center max-w-[80%]">A market analysis is a quantitative and qualitative assessment of a market. It looks into the size of the market.</p>
-                </div>
-            </div>
+      <div class="w-[85%] mx-auto mt-30 text-[#575757]">
+        <h2 class="font-[700] text-[30px] md:text-[48px] text-center">
+          Our <span class="text-[#FFCA1D]">Features</span>
+        </h2>
+        <div
+          class="flex mx-auto mt-20 items-center justify-center flex-col md:flex-row gap-20"
+        >
+          <div class="flex w-[70%] md:w-full">
+            <img
+              src="assests/images/Group-32.svg"
+              alt="Features image"
+              class=""
+            />
+          </div>
+          <div class="flex lg:w-[50%] w-full flex-col gap-5">
+            <h2 class="text-[30px] text-black lg:text-[40px]">
+              Manage everything in one workspace
+            </h2>
+            <div class="bg-[#FFCA1D] p-0.5 w-[50px]"></div>
+            <p class="">
+              Planning, tracking and delivering your team’s best work has never
+              been easier. An integrated workspace that’s simple to use,
+              TeamFlow lets you spend less time managing your work and more time
+              actually doing it.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="w-[85%] mx-auto mt-20 text-[#575757]">
-            <h2 class="font-[700] text-[48px] text-center">Our <span class="text-[#FFCA1D]">Features</span></h2>
-            <div class="flex mx-auto mt-20 items-center justify-center flex-col md:flex-row gap-20">
-                <div class="flex w-[full]">
-                    <img src="assests/images/Group-32.svg" alt="Features image" class="">
-                </div>
-                <div class="flex lg:w-[50%] w-full flex-col gap-5">
-                    <h2 class="text-[30px] text-black lg:text-[40px]">Manage everything in one workspace</h2>
-                    <div class="bg-[#FFCA1D] p-0.5 w-[50px]"></div>
-                    <p class="">Planning, tracking and delivering your team’s best work has never been easier. An integrated workspace that’s simple to use, TeamFlow lets you spend less time managing your work and more time actually doing it.</p>
-                </div>
-            </div>
+      <div
+        class="w-[85%] flex mx-auto mt-30 items-center justify-center flex-col md:flex-row gap-20 bg-[#FAFAFF] py-5"
+      >
+        <div class="flex lg:w-[50%] w-full flex-col gap-5">
+          <h3 class="text-[30px] text-black lg:text-[40px]">
+            Setup in minutes
+          </h3>
+          <div class="bg-[#FFCA1D] p-0.5 w-[50px]"></div>
+          <p class="">
+            Get started fast with hundreds of visual and customizable templates
+            - or create your own. Use our free online template maker to create
+            beautiful template in minutes. Choose from hundreds of pre-made
+            templates and tell stories with data with our easy drag-and-drop
+            infographic creator.
+          </p>
         </div>
+        <div class="flex w-[70%] md:w-[full]">
+          <img src="assests/images/Group-65.svg" alt="" class="" />
+        </div>
+      </div>
+
+      <div
+        class="w-full lg:w-[60%] mx-auto mt-30 gap-8 lg:gap-20 flex flex-col justify-center items-center px-3.5"
+      >
+        <h2 class="text-[25px] text-[#575757] text-center">
+          <span class="text-[#FFCA1D]">Integrate</span> with your existing tools
+          in a few clicks
+        </h2>
+        <div class="w-full flex flex-row justify-around md:gap-10">
+          <img
+            src="assests/images/image-21.svg"
+            alt="Box logo"
+            class="w-[50px] lg:w-[120px]"
+          />
+          <img
+            src="assests/images/image-19.svg"
+            alt="Box logo"
+            class="w-[50px] lg:w-[120px]"
+          />
+          <img
+            src="assests/images/image-16.svg"
+            alt="Box logo"
+            class="w-[50px] lg:w-[120px]"
+          />
+          <img
+            src="assests/images/image-15.svg"
+            alt="Box logo"
+            class="w-[50px] lg:w-[120px]"
+          />
+          <img
+            src="assests/images/image-17.svg"
+            alt="Box logo"
+            class="w-[50px] lg:w-[120px]"
+          />
+        </div>
+        <button
+          type="button"
+          class="w-[150px] bg-[#FFCA1D] font-[Nunito Sans] rounded-[5px] py-2.5"
+        >
+          Veiw all
+        </button>
+      </div>
+
+      <div class="w-[85%] mx-auto mt-30 text-[#575757]">
+        <div
+          class="flex mx-auto mt-20 items-center justify-center flex-col md:flex-row gap-20"
+        >
+          <div class="flex w-[70%] md:w-[full]">
+            <img
+              src="assests/images/Group-68.svg"
+              alt="Features image"
+              class=""
+            />
+          </div>
+          <div class="flex lg:w-[50%] w-full flex-col gap-5">
+            <h2 class="text-[30px] text-[#575757] lg:text-[40px]">
+              Save time with Automations
+            </h2>
+            <div class="bg-[#FFCA1D] p-0.5 w-[50px]"></div>
+            <p class="">
+              Automate the repetitive work in seconds so you can avoid human
+              error and focus on what matters. It gives the impression of
+              software that its highly automated which implies that it is good
+              for client for who want to save time and manage team members
+              easily.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[85%] flex mx-auto mt-30 items-center justify-center flex-col md:flex-row gap-20 bg-[#FAFAFF] py-5"
+      >
+        <div class="flex lg:w-[50%] w-full flex-col gap-5">
+          <h3 class="text-[30px] text-[#575757] lg:text-[40px]">
+            Visualise work with views
+          </h3>
+          <div class="bg-[#686DF1] p-0.5 w-[50px]"></div>
+          <p class="">
+            View data as a map, calendar, timeline, kanban, and more The
+            easy-to-use, visual interface lets any team member jump in and get
+            started, no training required.
+          </p>
+        </div>
+        <div class="flex w-[70%] md:w-[full]">
+          <img src="assests/images/Group-71.svg" alt="" class="" />
+        </div>
+      </div>
+
+      <div
+        class="w-[85%] mx-auto mt-30 flex items-center justify-start flex-col md:flex-row gap-20 text-[#575757]"
+      >
+        <div class="flex w-[full]">
+          <img
+            src="assests/images/Group-76.svg"
+            alt="Features image"
+            class=""
+          />
+        </div>
+        <div
+          class="flex lg:w-[70%] w-full flex-col items-start gap-5 -mt-45 lg:-mt-0"
+        >
+          <h2 class="text-[30px] text-black lg:text-[40px]">
+            24/7 Customer Support
+          </h2>
+          <div class="bg-[#FFCA1D] p-0.5 w-[50px]"></div>
+          <p class="">
+            Our team is here to give you personalized support within the hour
+            available 24/7. In accordance with our commitment to providing
+            superior and professional service. Join daily live webinars, watch
+            our tutorials, or browse through our knowledge base
+          </p>
+          <button
+            type="button"
+            class="w-[150px] bg-[#FFCA1D] font-[Nunito Sans] rounded-[5px] py-2.5"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+
+      <div class="w-[85%] mx-auto mt-30 mb-20">
+        <h2 class="text-center text-[25px] md:text-[48px]">
+          Client
+          <br />
+          <span class="text-center text-[#FFCA1D]"> Testimonials </span>
+        </h2>
+        <div
+          class="w-full lg:w-[70%] h-95 mt-10 mx-auto flex justify-center items-center relative"
+          style="
+            background-image: url('assests/images/Group-38.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <img
+            src="assests/images/Ellipse-2.svg"
+            alt="Client Testimonials"
+            class="absolute rounded-full hover:scale-110 transition-all duration-500 w-15 top-10 left-5 md:left-[20%]"
+          />
+          <img
+            src="assests/images/Ellipse-3.svg"
+            alt="Client Testimonials"
+            class="absolute rounded-full hover:scale-110 transition-all duration-500 w-22 top-45 left-0 md:left-[10%]"
+          />
+          <img
+            src="assests/images/Ellipse-4.svg"
+            alt="Client Testimonials"
+            class="absolute rounded-full hover:scale-110 transition-all duration-500 bottom-3 left-12 md:left-[30%] w-18"
+          />
+          <img
+            src="assests/images/Ellipse-5.svg"
+            alt="Client Testimonials"
+            class="absolute rounded-full hover:scale-110 transition-all duration-500 bottom-3 right-12 md:right-[20%] w-18"
+          />
+          <img
+            src="assests/images/Ellipse-6.svg"
+            alt="Client Testimonials"
+            class="absolute rounded-full hover:scale-110 transition-all duration-500 w-22 top-45 right-0 md:right-[10%]"
+          />
+          <img
+            src="assests/images/Ellipse-7.svg"
+            alt="Client Testimonials"
+            class="absolute rounded-full hover:scale-110 transition-all duration-500 w-15 top-12 right-5 md:right-[20%]"
+          />
+          <div
+            class="w-75 scale-50 md:scale-80 p-5 pt-10 bg-white rounded-2xl text-center shadow-2xl"
+          >
+            <img
+              src="assests/images/Ellipse-1.svg"
+              alt="Client Testimonials"
+              class="absolute rounded-full left-[35%] -top-14 w-20 hover:scale-110 transition-all duration-500"
+            />
+            <h3 class="text-lg font-bold">Rocky Dickson</h3>
+            <p class="text-sm mt-2">
+              “The features on monday.com make our team work faster and easier
+              to organize”
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto flex gap-3 mt-5 justify-center">
+          <span
+            class="p-1 bg-[#FFCA1D] rounded-full hover:scale-110 hover:bg-[#FFCA1D]"
+          ></span>
+          <span
+            class="p-1 bg-[#DDDDDD] rounded-full hover:scale-110 hover:bg-[#FFCA1D]"
+          ></span>
+          <span
+            class="p-1 bg-[#DDDDDD] rounded-full hover:scale-110 hover:bg-[#FFCA1D]"
+          ></span>
+        </div>
+      </div>
+
+      <div
+        class="w-[85%] bg-[#FAFAFF] flex flex-col items-center justify-center mx-auto py-20 gap-2 my-30"
+      >
+        <p class="text-[#EB801D] font-bold">Support</p>
+        <h2 class="text-[#2D3150] text-[20px] md:text-2xl font-bold">
+          Subscribe Newslatter & get
+        </h2>
+        <p class="text-[#2D3150] text-2xl">Company News</p>
+        <div
+          class="mt-8 p-0.5 flex flex-row justify-center items-center flex-nowrap bg-white rounded-2xl shadow-2xl"
+        >
+          <i class="fa fa-envelope ml-4 text-neutral-600"></i>
+          <input
+            type="text"
+            name="subscribers"
+            class="mx-4 w-[120px] md:w-70 outline-none"
+            placeholder="Your Email"
+          />
+          <button
+            type="button"
+            class="py-3 px-4.5 rounded-2xl text-white bg-[#686DF1] flex items-center justify-center scale-80 md:scale-100 hover:scale-105 transition-all duration-300"
+          >
+            <i class="fa fa-send mr-3"></i>
+            subscribe
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap w-[85%] gap-5 md:gap-10 mx-auto my-20 justify-between">
+        <div class="flex w-full lg:w-auto flex-col gap-15">
+          <img
+            src="/assests/images/Company_Logo.svg"
+            alt="Company Logo"
+            class="w-[200px]"
+          />
+          <p class="text-[#5C5E87]">All Rights Reserved © teamflow.com</p>
+          <div class="">
+            <h3 class="font-bold mb-4">Address</h3>
+            <p class="text-[#5C5E87]">26 W 12th St. New York, NY 10342, NYC</p>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h3 class="font-bold">Social Media</h3>
+            <div class="flex gap-4">
+              <img src="assests/images/facebook-logo.svg" alt="" />
+              <img src="assests/images/instagram-logo.svg" alt="" />
+              <img src="assests/images/x-logo.svg" alt="" />
+              <img src="assests/images/youtube-logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col text-[#5C5E87] gap-6">
+          <h3 class="font-bold mb-4 text-black">Product</h3>
+          <span class=""><a href="">Product</a></span>
+          <span class=""><a href="">Pricing</a></span>
+          <span class=""><a href="">Enterprise</a></span>
+          <span class=""><a href="">Partner</a></span>
+          <span class=""><a href="">Affliate</a></span>
+          <span class=""><a href="">Integration</a></span>
+          <span class=""><a href="">Developer</a></span>
+          <span class=""><a href="">Students</a></span>
+          <span class=""><a href="">Work OS</a></span>
+        </div>
+        <div class="flex flex-col text-[#5C5E87] gap-6">
+          <h3 class="font-bold mb-4 text-black">Team</h3>
+          <span class=""><a href="">About Us</a></span>
+          <span class=""><a href="">Contact Us</a></span>
+          <span class=""><a href="">Careers</a></span>
+          <span class=""><a href="">Find a Partner</a></span>
+          <span class=""><a href="">In the News</a></span>
+        </div>
+        <div class="flex flex-col text-[#5C5E87] gap-6">
+          <h3 class="font-bold mb-4 text-black">Solutions</h3>
+          <span class=""><a href="">Project Management</a></span>
+          <span class=""><a href="">Marketing</a></span>
+          <span class=""><a href="">CRM and Sales</a></span>
+          <span class=""><a href="">Software Development</a></span>
+          <span class=""><a href="">Constructions</a></span>
+          <span class=""><a href="">Creative Production</a></span>
+          <span class=""><a href="">Remote Work</a></span>
+          <span class=""><a href="">HR</a></span>
+          <span class=""><a href="">IT</a></span>
+          <span class=""><a href="">See More Solutions</a></span>
+        </div>
+        <div class="flex flex-col text-[#5C5E87] gap-6">
+          <h3 class="font-bold mb-4 text-black">Resources</h3>
+          <span class=""><a href="">Knowledge Base</a></span>
+          <span class=""><a href="">Guildes</a></span>
+          <span class=""><a href="">Daily Webinars</a></span>
+          <span class=""><a href="">Community</a></span>
+          <span class=""><a href="">Customer Stories</a></span>
+          <span class=""><a href="">Templates</a></span>
+          <span class=""><a href="">Profesionals</a></span>
+          <span class=""><a href="">Video Tutorials</a></span>
+          <span class=""><a href="">Blog</a></span>
+          <span class=""><a href="">Podcast</a></span>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
