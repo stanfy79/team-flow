@@ -33,10 +33,31 @@
               Sign Up
             </button>
           </div>
-          <div class="block lg:hidden">
+          <div class="block lg:hidden" onclick="openMenu()">
             <i class="fa fa-bars active:scale-110 active:text-[#FFCA1D]"></i>
           </div>
         </header>
+
+        <!-- Mobile view menu -->
+        <div class="w-full h-full hidden fixed bg-white z-200" id="mobile-menu">
+          <img src="assests/images/Logo.svg" alt="Logo" class="w-[150px] ml-4 mt-3 p-2 bg-[#4b4aef] rounded-md" />
+          <i class="fa fa-close absolute right-7 top-7 active:scale-160 active:text-[#FFCA1D] scale-135" onclick="closeMenu()"></i>
+
+          <div class="flex w-full flex-col gap-3 mt-10">
+            <span class="w-full py-3 px-4 hover:bg-gray-100 border-b"><a href="" class="">Product</a></span>
+            <span class="w-full py-3 px-4 hover:bg-gray-100 border-b"><a href="" class="">Solution</a></span>
+            <span class="w-full py-3 px-4 hover:bg-gray-100 border-b"><a href="" class="">Enterprise</a></span>
+            <span class="w-full py-3 px-4 hover:bg-gray-100 border-b"><a href="" class="">Price</a></span>
+          </div>
+          <div class="flex justify-center mt-25">
+            <button class="border-none px-4 rounded-sm mr-4 bg-[#4b4aef] w-23 text-white py-3 font-bold rounded-sm">
+              Login
+            </button>
+            <button class="bg-[#FFCA1D] w-23 text-white py-3 font-bold rounded-sm">
+              Sign Up
+            </button>
+          </div>
+        </div>
         <div class="flex flex-col lg:mt-20 mt-30 w-[85%] lg:flex-row">
           <div class="sm:w-[50%] w-full flex flex-col gap-8 items-start">
             <span class="text-black text-1xl p-1.5 bg-white rounded-lg"
@@ -500,5 +521,7 @@
         </div>
       </div>
     </div>
+
+    <script src="assests/javascript/script.js"></script>
   </body>
 </html>
