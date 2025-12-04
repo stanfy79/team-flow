@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="output.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -20,21 +21,29 @@
         <header class="w-[85%] h-10 mt-5 flex justify-between items-center">
           <img src="assests/images/Logo.svg" alt="Logo" class="w-[150px]" />
           <div class="hidden lg:flex gap-5 text-white font-medium">
-            <span class="">Product</span>
-            <span class="">Solution</span>
-            <span class="">Enterprise</span>
-            <span class="">Price</span>
+            <span class="hover:border-b-2 hover:border-white transition-all duration-100">
+              <a href="/">Product</a>
+            </span>
+            <span class="hover:border-b-2 hover:border-white transition-all duration-100">
+              <a href="/">Solution</a>
+            </span>
+            <span class="hover:border-b-2 hover:border-white transition-all duration-100">
+              <a href="/">Enterprise</a>
+            </span>
+            <span class="hover:border-b-2 hover:border-white transition-all duration-100">
+              <a href="/">Price</a>
+            </span>
           </div>
           <div class="hidden lg:flex">
-            <button class="border-none px-4 py-2 rounded-sm mr-4 bg-white">
+            <button class="px-4 py-2 rounded-sm mr-4 bg-white hover:bg-white hover:border-1 hover:border-[#4b4aef] hover:text-[#4b4aef] transition duration-500">
               Login
             </button>
-            <button class="bg-[#FFCA1D] text-white px-4 py-2 rounded-sm">
+            <button class="bg-[#FFCA1D] text-white px-4 py-2 rounded-sm hover:bg-white hover:border-1 hover:border-[#FFCA1D] hover:text-black transition duration-500">
               Sign Up
             </button>
           </div>
           <div class="block lg:hidden" onclick="openMenu()">
-            <i class="fa fa-bars active:scale-110 active:text-[#FFCA1D]"></i>
+            <i class="fa fa-bars active:scale-110 active:text-[#FFCA1D] hover:text-[#FFCA1D]"></i>
           </div>
         </header>
 
@@ -50,10 +59,10 @@
             <span class="w-full py-3 px-4 hover:bg-gray-100 border-b"><a href="" class="">Price</a></span>
           </div>
           <div class="flex justify-center mt-25">
-            <button class="border-none px-4 rounded-sm mr-4 bg-[#4b4aef] w-23 text-white py-3 font-bold rounded-sm">
+            <button class="px-4 rounded-sm mr-4 bg-[#4b4aef] w-23 text-white py-3 font-bold rounded-sm hover:bg-white hover:border-1 hover:border-[#4b4aef] hover:text-[#4b4aef] transition duration-500">
               Login
             </button>
-            <button class="bg-[#FFCA1D] w-23 text-white py-3 font-bold rounded-sm">
+            <button class="bg-[#FFCA1D] w-23 text-white py-3 font-bold rounded-sm hover:bg-white hover:border-1 hover:border-[#FFCA1D] hover:text-[#4b4aef] transition duration-500">
               Sign Up
             </button>
           </div>
@@ -70,13 +79,13 @@
             </p>
             <button
               type="button"
-              class="p-3 bg-[#FFCA1D] rounded-lg hover:scale-120 transition-all duration-300"
+              class="p-3 bg-[#FFCA1D] font-bold rounded-lg hover:bg-transparent hover:text-white hover:border-1 hover:border-[#FFCA1D] hover:scale-105 transition-all duration-300"
             >
               Get started
             </button>
           </div>
           <div
-            class="w-[50%] w-full mx-auto h-90 flex relative px-16 lg:px-20 px-0 justify-around md:justify-evenly flex-wrap"
+            class="w-full mx-auto h-90 flex relative p-5 md:px-16 lg:px-20 px-0 justify-around md:justify-evenly flex-wrap"
           >
             <img
               src="assests/images/Group-43.svg"
@@ -115,11 +124,11 @@
         >
           See why over 100,000 teams choose TeamFlow.com
         </div>
-        <div class="w-[80%] flex justify-between items-center">
-          <img src="assests/images/image-1.svg" alt="Surporters" class="w-12" />
-          <img src="assests/images/image-2.svg" alt="Surporters" class="w-12" />
-          <img src="assests/images/image-3.svg" alt="Surporters" class="w-12" />
-          <img src="assests/images/image-4.svg" alt="Surporters" class="w-12" />
+        <div class="w-[80%] flex justify-evenly items-center">
+          <img src="assests/images/image-1.svg" alt="Surporters" class="w-12 hover:scale-120 transition-all duration-300" />
+          <img src="assests/images/image-2.svg" alt="Surporters" class="w-12 hover:scale-120 transition-all duration-300" />
+          <img src="assests/images/image-3.svg" alt="Surporters" class="w-12 hover:scale-120 transition-all duration-300" />
+          <img src="assests/images/image-4.svg" alt="Surporters" class="w-12 hover:scale-120 transition-all duration-300" />
         </div>
       </div>
 
@@ -176,7 +185,7 @@
         <div
           class="flex mx-auto mt-20 items-center justify-center flex-col md:flex-row gap-20"
         >
-          <div class="flex w-[70%] md:w-full">
+          <div class="flex w-[70%] md:w-full lg:scale-80">
             <img
               src="assests/images/Group-32.svg"
               alt="Features image"
@@ -215,7 +224,7 @@
               infographic creator.
             </p>
           </div>
-          <div class="flex w-[70%] md:w-[full]">
+          <div class="flex w-[70%] md:w-[full]  lg:scale-80">
             <img src="assests/images/Group-65.svg" alt="" class="" />
           </div>
         </div>
@@ -231,32 +240,32 @@
           <img
             src="assests/images/image-21.svg"
             alt="Box logo"
-            class="w-[50px] lg:w-[120px]"
+            class="w-[50px] lg:w-[120px] hover:scale-120 transition-all duration-300"
           />
           <img
             src="assests/images/image-19.svg"
             alt="Box logo"
-            class="w-[50px] lg:w-[120px]"
+            class="w-[50px] lg:w-[120px] hover:scale-120 transition-all duration-300"
           />
           <img
             src="assests/images/image-16.svg"
             alt="Box logo"
-            class="w-[50px] lg:w-[120px]"
+            class="w-[50px] lg:w-[120px] hover:scale-120 transition-all duration-300"
           />
           <img
             src="assests/images/image-15.svg"
             alt="Box logo"
-            class="w-[50px] lg:w-[120px]"
+            class="w-[50px] lg:w-[120px] hover:scale-120 transition-all duration-300"
           />
           <img
             src="assests/images/image-17.svg"
             alt="Box logo"
-            class="w-[50px] lg:w-[120px]"
+            class="w-[50px] lg:w-[120px] hover:scale-120 transition-all duration-300"
           />
         </div>
         <button
           type="button"
-          class="w-[150px] bg-[#FFCA1D] font-[Nunito Sans] rounded-[5px] py-2.5"
+          class="w-[150px] bg-[#FFCA1D] font-[Nunito Sans] rounded-[5px] py-2.5 hover:bg-white hover:border-1 hover:border-[#FFCA1D] hover:scale-105 transition-all duration-300"
         >
           Veiw all
         </button>
@@ -266,7 +275,7 @@
         <div
           class="flex mx-auto mt-20 items-center justify-center flex-col md:flex-row gap-20"
         >
-          <div class="flex w-[70%] md:w-[full]">
+          <div class="flex w-[70%] md:w-[full] lg:scale-80">
             <img
               src="assests/images/Group-68.svg"
               alt="Features image"
@@ -303,7 +312,7 @@
             started, no training required.
           </p>
         </div>
-        <div class="flex w-[70%] md:w-[full]">
+        <div class="flex w-[70%] md:w-[full] lg:scale-80">
           <img src="assests/images/Group-71.svg" alt="" class="" />
         </div>
       </div>
@@ -343,7 +352,7 @@
           </p>
           <button
             type="button"
-            class="w-[150px] bg-[#FFCA1D] font-[Nunito Sans] rounded-[5px] py-2.5"
+            class="w-[150px] bg-[#FFCA1D] hover:bg-white hover:border-1 hover:border-[#FFCA1D] font-[Nunito Sans] rounded-[5px] py-2.5 hover:scale-105 transition-all duration-300"
           >
             Read more
           </button>
@@ -443,7 +452,7 @@
           />
           <button
             type="button"
-            class="py-3 px-4.5 rounded-2xl text-white bg-[#686DF1] flex items-center justify-center scale-80 md:scale-100 hover:scale-105 transition-all duration-300"
+            class="py-3 px-4.5 rounded-2xl text-white bg-[#686DF1] flex items-center justify-center scale-80 md:scale-100 hover:scale-90 transition-all duration-300"
           >
             <i class="fa fa-send mr-3"></i>
             subscribe
@@ -452,7 +461,7 @@
       </div>
 
       <div class="flex flex-wrap w-[85%] gap-5 md:gap-10 mx-auto my-20 justify-between">
-        <div class="flex w-full lg:w-auto flex-col gap-15">
+        <div class="flex w-full lg:w-auto flex-col gap-10 mb-20">
           <img
             src="/assests/images/Company_Logo.svg"
             alt="Company Logo"
@@ -473,8 +482,8 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col text-[#5C5E87] gap-6">
-          <h3 class="font-bold mb-4 text-black">Product</h3>
+        <div class="flex flex-col text-[#5C5E87] gap-4 footer-links">
+          <h3 class="font-bold mb-2 text-black">Product</h3>
           <span class=""><a href="">Product</a></span>
           <span class=""><a href="">Pricing</a></span>
           <span class=""><a href="">Enterprise</a></span>
@@ -485,7 +494,7 @@
           <span class=""><a href="">Students</a></span>
           <span class=""><a href="">Work OS</a></span>
         </div>
-        <div class="flex flex-col text-[#5C5E87] gap-6">
+        <div class="flex flex-col text-[#5C5E87] gap-4">
           <h3 class="font-bold mb-4 text-black">Team</h3>
           <span class=""><a href="">About Us</a></span>
           <span class=""><a href="">Contact Us</a></span>
@@ -493,7 +502,7 @@
           <span class=""><a href="">Find a Partner</a></span>
           <span class=""><a href="">In the News</a></span>
         </div>
-        <div class="flex flex-col text-[#5C5E87] gap-6">
+        <div class="flex flex-col text-[#5C5E87] gap-4">
           <h3 class="font-bold mb-4 text-black">Solutions</h3>
           <span class=""><a href="">Project Management</a></span>
           <span class=""><a href="">Marketing</a></span>
@@ -506,7 +515,7 @@
           <span class=""><a href="">IT</a></span>
           <span class=""><a href="">See More Solutions</a></span>
         </div>
-        <div class="flex flex-col text-[#5C5E87] gap-6">
+        <div class="flex flex-col text-[#5C5E87] gap-4">
           <h3 class="font-bold mb-4 text-black">Resources</h3>
           <span class=""><a href="">Knowledge Base</a></span>
           <span class=""><a href="">Guildes</a></span>

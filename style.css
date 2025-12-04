@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.footer-links span > a:hover {
+    color: #686DF1;
+}
